@@ -35,7 +35,9 @@
               <li class="navigation-list-item">
                 <a class="navigation-item" href="./portfolio.html">Портфоліо</a>
               </li>
-              <li class="navigation-list-item"><a class="navigation-item" href="#footer">Контакти</a></li>
+              <li class="navigation-list-item">
+                <a class="navigation-item" href="#footer">Контакти</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -63,7 +65,16 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="button-hero">Замовити послугу</button>
+          <button type="button" class="button-hero" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="button-close" data-modal-close>
+                <svg width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -121,18 +132,33 @@
         </div>
       </section>
       <!--what we do-->
-      <section class="specialization section">
-        <div class="container">
-          <h2 class="specialization title">Чим ми займаємося</h2>
-          <ul class="specialization list">
-            <li class="specialization-item">
-              <img src="images/img-1.jpg" alt="друкує текст" width="370" />
+      <section class="services section">
+        <div class="services container">
+          <h2 class="services title">Чим ми займаємося</h2>
+          <ul class="services list">
+            <li class="services-card">
+              <div class="services-thumb">
+                <img src="images/img-1.jpg" alt="друкує текст" width="370" />
+                <div class="services-title-box">
+                  <h3 class="services-thumb-title">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
-            <li class="specialization-item">
-              <img src="images/img-2.jpg" alt="телефон в руці" width="370" />
+            <li class="services-card">
+              <div class="services-thumb">
+                <img src="images/img-2.jpg" alt="телефон в руці" width="370" />
+                <div class="services-title-box">
+                  <h3 class="services-thumb-title">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
-            <li class="specialization-item">
-              <img src="images/img-3.jpg" alt="спектр кольорів" width="370" />
+            <li class="services-card">
+              <div class="services-thumb">
+                <img src="images/img-3.jpg" alt="спектр кольорів" width="370" />
+                <div class="services-title-box">
+                  <h3 class="services-thumb-title">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -283,37 +309,37 @@
           <ul class="clients list">
             <li class="clients-item">
               <a href="/" class="clients-link"
-                ><svg  width="106px" height="60px">
+                ><svg width="106px" height="60px">
                   <use href="./images/icons.svg#icon-company1"></use></svg
               ></a>
             </li>
             <li class="clients-item">
               <a href="/" class="clients-link"
-                ><svg  width="106px" height="60px">
+                ><svg width="106px" height="60px">
                   <use href="./images/icons.svg#icon-company2"></use></svg
               ></a>
             </li>
             <li class="clients-item">
               <a href="/" class="clients-link"
-                ><svg  width="106px" height="60px">
+                ><svg width="106px" height="60px">
                   <use href="./images/icons.svg#icon-company3"></use></svg
               ></a>
             </li>
             <li class="clients-item">
               <a href="/" class="clients-link"
-                ><svg  width="106px" height="60px">
+                ><svg width="106px" height="60px">
                   <use href="./images/icons.svg#icon-company4"></use></svg
               ></a>
             </li>
             <li class="clients-item">
               <a href="/" class="clients-link"
-                ><svg  width="106px" height="60px">
+                ><svg width="106px" height="60px">
                   <use href="./images/icons.svg#icon-company5"></use></svg
               ></a>
             </li>
             <li class="clients-item">
               <a href="/" class="clients-link"
-                ><svg  width="106px" height="60px">
+                ><svg width="106px" height="60px">
                   <use href="./images/icons.svg#icon-company6"></use></svg
               ></a>
             </li>
@@ -346,33 +372,34 @@
         <div class="footer-links">
           <h3 class="footer-links-title">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="footer social list">
-                  <li class="footer social-icon">
-                    <a href="/" class="footer social-link"
-                      ><svg width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-instagram"></use></svg
-                    ></a>
-                  </li>
-                  <li class="footer social-icon">
-                    <a href="/" class="footer social-link"
-                      ><svg width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg
-                    ></a>
-                  </li>
-                  <li class="footer social-icon">
-                    <a href="/" class="footer social-link"
-                      ><svg width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg
-                    ></a>
-                  </li>
-                  <li class="footer social-icon">
-                    <a href="/" class="footer social-link"
-                      ><svg width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg
-                    ></a>
-                  </li>
-                </ul>
+            <li class="footer social-icon">
+              <a href="/" class="footer social-link"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="footer social-icon">
+              <a href="/" class="footer social-link"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer social-icon">
+              <a href="/" class="footer social-link"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer social-icon">
+              <a href="/" class="footer social-link"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
