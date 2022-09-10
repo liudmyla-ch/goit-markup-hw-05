@@ -90,6 +90,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-item {
   margin-right: 50px;
@@ -206,7 +209,7 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  opacity:1;
+  opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -219,7 +222,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
   transition-property: transform;
   transition-duration: 250ms;
